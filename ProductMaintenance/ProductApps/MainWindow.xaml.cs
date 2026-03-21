@@ -40,6 +40,9 @@ namespace ProductApps
 
                 decimal totalWrapCharge = cProduct.TotalPayment + 25 + 5;
                 totalWrapChargeTextBox.Text = Convert.ToString(totalWrapCharge);
+
+                decimal totalGSTCharge = (cProduct.TotalPayment + 25 + 5) * 1.1m;
+                totalGSTChargeTextBox.Text = Convert.ToString(totalGSTCharge);
             }
             catch (FormatException)
             {
